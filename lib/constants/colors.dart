@@ -16,4 +16,8 @@ class AppColors {
   static const Color yellow = Color(0xFFFFE793);
   static const Color dullYellow = Color(0xFFFFF9B7);
   static const Color lightYellow = Color(0xFFFFFBEC);
+  static const Color barBG = Color(0xffBDDFFA);
+  static const Color design = Color(0xff979EAA);
+  static const Color games = Color(0xff99CA83);
+  static const Color work = Color(0xffFF842B);
 }
