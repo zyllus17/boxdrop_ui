@@ -20,7 +20,7 @@ class AppTheme {
     // bodyText1: _bodyText1, //14px
     // bodyText2: _bodyText2, //14px //normal
     // button: _button, //14px
-    // caption: _caption, //12px
+    caption: _caption, //12px
     // overline: _overline, //10px
   );
 
@@ -38,7 +38,7 @@ class AppTheme {
 
   static final TextStyle _headline3 = TextStyle(
     color: AppColors.black,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
     fontSize: 18.sp,
   );
 
@@ -88,4 +88,10 @@ class AppTheme {
   //   fontWeight: FontWeight.w400,
   //   fontSize: 14.sp,
   // );
+
+  static final TextStyle _caption = TextStyle(
+    color: AppColors.grey,
+    fontWeight: FontWeight.w500,
+    fontSize: 12.sp,
+  );
 }
