@@ -1,5 +1,5 @@
+import 'package:dribbox_ui/screens/storage_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:dribbox_ui/constants/colors.dart';
 import 'package:dribbox_ui/constants/images.dart';
@@ -13,7 +13,12 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppColors.navy,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const StorageScreen()),
+          );
+        },
         child: const Icon(Icons.sd_card),
       ),
       body: SingleChildScrollView(
@@ -34,7 +39,6 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Container(
-                //TODO: Make this container TextBox
                 height: 50,
                 decoration: BoxDecoration(
                   color: Colors.blue[50],
@@ -49,7 +53,7 @@ class HomeScreen extends StatelessWidget {
                         Strings.search,
                         style: Theme.of(context).textTheme.headline4,
                       ),
-                      Icon(Icons.search),
+                      const Icon(Icons.search),
                     ],
                   ),
                 ),
@@ -64,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                         Strings.recent,
                         style: Theme.of(context).textTheme.headline4,
                       ),
-                      Icon(Icons.keyboard_arrow_down_sharp),
+                      const Icon(Icons.keyboard_arrow_down_sharp),
                     ],
                   ),
                   Row(
@@ -77,7 +81,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 30),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
+                children: const <Widget>[
                   Box(
                     backgroundColor: AppColors.lightYellow,
                     dotColor: AppColors.darkYellow,
@@ -92,10 +96,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
+                children: const <Widget>[
                   Box(
                     backgroundColor: AppColors.lightBlue,
                     dotColor: AppColors.grey,
@@ -110,10 +114,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
+                children: const <Widget>[
                   Box(
                     backgroundColor: AppColors.dullYellow,
                     dotColor: AppColors.cobalt,
