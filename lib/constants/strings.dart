@@ -10,6 +10,7 @@ class Strings {
   static const String design = "Design";
   static const String games = "Games";
   static const String work = "Work";
+  static const String storageDetails = "Storage Details";
 
 //
 }
